@@ -37,7 +37,7 @@ fn main() -> ! {
         for current_led in PIXELS.iter() {
             leds[last_led.0][last_led.1] = 0;
             leds[current_led.0][current_led.1] = 1;
-            display.show(&mut timer, leds, 30);
+            display.show(&mut timer, leds, 40);
             last_led = *current_led;
         }
     }
